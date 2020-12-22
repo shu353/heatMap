@@ -5,8 +5,8 @@ fetch(
   .then((res) => {
     const dataset = res["monthlyVariance"];
     const baseTemperature = res["baseTemperature"];
-    console.log(dataset);
-    console.log(baseTemperature);
+    //console.log(dataset);
+    //console.log(baseTemperature);
     generateScales(dataset);
     drawCells(dataset, baseTemperature);
     drawAxis();
